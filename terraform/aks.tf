@@ -14,7 +14,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   default_node_pool {
     name       = "default"
     node_count = 1
-    vm_size    = "Standard_D4s_v3"
+    vm_size    = "Standard_B1ms"
     max_pods   = 240
     os_sku     = "Ubuntu"
   }
