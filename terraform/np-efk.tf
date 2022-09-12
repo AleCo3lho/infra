@@ -1,7 +1,7 @@
 resource "azurerm_kubernetes_cluster_node_pool" "efk" {
   name                  = "efk"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
-  vm_size               = "Standard_B1ms"
+  vm_size               = "Standard_B2ms"
   max_pods              = 240
   os_sku                = "Ubuntu"
   node_count            = 1
