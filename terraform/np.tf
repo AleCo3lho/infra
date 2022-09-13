@@ -19,7 +19,7 @@
   }
 } */
 
-resource "azurerm_kubernetes_cluster_node_pool" "kubecost" {
+/* resource "azurerm_kubernetes_cluster_node_pool" "kubecost" {
   name                  = "kubecost"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
   vm_size               = "Standard_B2s"
@@ -36,4 +36,4 @@ resource "azurerm_kubernetes_cluster_node_pool" "kubecost" {
     role = "kubecost"
     env  = "dev"
   }
-}
+} */
