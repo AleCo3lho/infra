@@ -9,3 +9,9 @@ resource "azurerm_storage_account" "kubecost" {
     environment = "Development"
   }
 }
+
+resource "azurerm_storage_container" "kubecost" {
+  name                  = "kubecost"
+  storage_account_name  = azurerm_storage_account.kubecost.name
+  container_access_type = "private"
+}
