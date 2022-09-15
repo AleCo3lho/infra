@@ -22,7 +22,7 @@
 resource "azurerm_kubernetes_cluster_node_pool" "kubecost" {
   name                  = "kubecost"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
-  vm_size               = "Standard_B2s"
+  vm_size               = "Standard_B2ms"
   max_pods              = 240
   os_sku                = "Ubuntu"
   node_count            = 1
