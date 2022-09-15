@@ -19,7 +19,7 @@
   }
 } */
 
-/* resource "azurerm_kubernetes_cluster_node_pool" "kubecost" {
+resource "azurerm_kubernetes_cluster_node_pool" "kubecost" {
   name                  = "kubecost"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
   vm_size               = "Standard_B2s"
@@ -29,11 +29,11 @@
 
   tags = {
     env  = "dev"
-    role = "kubecost"
+    role = "sftpgo"
     tier = "application"
   }
   node_labels = {
-    role = "kubecost"
+    role = "sftpgo"
     env  = "dev"
   }
-} */
+}
