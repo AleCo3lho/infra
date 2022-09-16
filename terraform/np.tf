@@ -19,7 +19,7 @@
   }
 } */
 
-resource "azurerm_kubernetes_cluster_node_pool" "sftpgo" {
+/* resource "azurerm_kubernetes_cluster_node_pool" "sftpgo" {
   name                  = "sftpgo"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
   vm_size               = "Standard_B2ms"
@@ -36,4 +36,4 @@ resource "azurerm_kubernetes_cluster_node_pool" "sftpgo" {
     role = "sftpgo"
     env  = "dev"
   }
-}
+} */
