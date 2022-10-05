@@ -19,8 +19,8 @@
   }
 } */
 
-/* resource "azurerm_kubernetes_cluster_node_pool" "sftpgo" {
-  name                  = "sftpgo"
+resource "azurerm_kubernetes_cluster_node_pool" "wp" {
+  name                  = "wp"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
   vm_size               = "Standard_B2ms"
   max_pods              = 240
@@ -29,11 +29,11 @@
 
   tags = {
     env  = "dev"
-    role = "sftpgo"
+    role = "wp"
     tier = "application"
   }
   node_labels = {
-    role = "sftpgo"
+    role = "wp"
     env  = "dev"
   }
-} */
+}
