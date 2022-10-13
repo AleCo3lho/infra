@@ -19,7 +19,7 @@
   }
 } */
 
-resource "azurerm_kubernetes_cluster_node_pool" "wp" {
+/* resource "azurerm_kubernetes_cluster_node_pool" "wp" {
   name                  = "wp"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks.id
   vm_size               = "Standard_B2ms"
@@ -36,5 +36,5 @@ resource "azurerm_kubernetes_cluster_node_pool" "wp" {
     role = "wp"
     env  = "dev"
   }
-}
+} */
 
